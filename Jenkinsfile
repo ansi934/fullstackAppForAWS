@@ -21,7 +21,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: https://github.com/ansi934/fullstackAppForAWS.git, branch: 'main'
+                 git branch: 'main', url: 'https://github.com/ansi934/fullstackAppForAWS.git'
+
             }
         }
 
